@@ -7,3 +7,4 @@ Simple React Google Maps component
 $ npm install
 $ npm start
 ```
+# deploy
