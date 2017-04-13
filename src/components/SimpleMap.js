@@ -11,7 +11,6 @@ export default function SimpleMap (props) {
             position: props.globalGM.ControlPosition.TOP_LEFT,
         }
 
-  let trafLayer = false;
   const buttonControl = (options) => {
          const control = document.createElement('DIV');
          control.innerHTML = options.name;
@@ -49,14 +48,13 @@ export default function SimpleMap (props) {
                   });
                   buttonOptions.gmap = ref.props.map;
                   buttonOptions.action = ()=> {
-                    if(!trafLayer){
+                    if(!trafficLayer.getMap()){
                       trafficLayer.setMap(ref.props.map);
                       button.classList.add("button-selected");
                     }else{
                       trafficLayer.setMap(null);
                       button.classList.remove("button-selected");
                     }
-                    trafLayer = !trafLayer;
                   }
                   button = new buttonControl(buttonOptions);
                 }}
