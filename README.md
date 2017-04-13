@@ -4,6 +4,15 @@
 
 * [Google Maps API key](https://developers.google.com/maps/documentation/javascript/get-api-key)
 
+## Adding traffic layer
+
+```javascript
+if(!trafLayer){
+          trafficLayer.setMap(map);
+        }else{
+          trafficLayer.setMap(null);
+```
+
 ## License
 
 The MIT License (MIT)
