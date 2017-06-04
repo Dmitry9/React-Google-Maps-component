@@ -7,5 +7,5 @@ Simple React Google Maps component
 $ npm install
 $ npm start
 ```
-[See it deployed](https://lightfoot-vlfnzwzgzw.now.sh/ "React-Google-Maps-component").
+[See it deployed](https://lightfoot-vlfnzwzgzw.now.sh/ "React-Google-Maps-component") (may need a minute to warm up).
 
